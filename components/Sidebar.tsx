@@ -14,8 +14,8 @@ const Sidebar = ({ user }: SiderbarProps) => {
             <Link href="/" className="mb-12 cursor-pointer flex item-center gap-2">
               <Image
                  src="/icons/logo.svg"
-                 width={34}
-                 height={34}
+                 width={70}
+                 height={60}
                  alt="BXI Bank"
                  className="size-[24px] max-xl:size-14"
                />

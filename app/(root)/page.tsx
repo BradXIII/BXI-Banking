@@ -20,7 +20,7 @@ const Home = () => {
           <TotalBalanceBox
             accounts={[]}
             totalBanks={1}
-            totalCurrentBalance={1250.35}
+            totalCurrentBalance={1234.12}
           />
         </header>
 
@@ -30,7 +30,7 @@ const Home = () => {
       <RightSidebar
         user={loggedIn}
         transactions={[]}
-        banks={[{ $id: '1', currentBalance: 123.50 }, { $id: '2', currentBalance: 500.50 }]}
+        banks={[{ $id: '1', currentBalance: 123.45 }, { $id: '2', currentBalance: 678.90 }]}
       />
     </section>
   );
