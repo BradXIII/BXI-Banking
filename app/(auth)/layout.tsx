@@ -11,10 +11,11 @@ export default function RootLayout({
         <div className="auth-asset">
           <div>
             <Image
-              src="/icons/auth-image-1.png"
+              src="/icons/crypto.gif"
               alt="Auth image"
               width={600}
               height={600}
+              style={{ width: "100%", height: "auto" }}
             />
           </div>
         </div>

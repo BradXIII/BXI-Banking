@@ -9,13 +9,13 @@ import { authFormSchema } from '@/lib/utils'
 const formSchema = authFormSchema('sign-up')
 
 interface CustomInput {
-    control: Control<z.infer<typeof formSchema>>,
-    name: FieldPath<z.infer<typeof formSchema>>,
-    label: string,
-    placeholder: string
+  control: Control<z.infer<typeof formSchema>>,
+  name: FieldPath<z.infer<typeof formSchema>>,
+  label: string,
+  placeholder: string
 }
 
-const CustomInput = ({ control, name, label, placeholder}: CustomInput) => {
+const CustomInput = ({ control, name, label, placeholder }: CustomInput) => {
   return (
     <FormField
       control={control}
@@ -27,15 +27,14 @@ const CustomInput = ({ control, name, label, placeholder}: CustomInput) => {
           </FormLabel>
           <div className="flex w-full flex-col">
             <FormControl>
-              <input
+              <Input 
                 placeholder={placeholder}
                 className="input-class"
                 type={name === 'password' ? 'password' : 'text'}
                 {...field}
               />
             </FormControl>
-            <FormMessage
-            className="form-message mt-2" />
+            <FormMessage className="form-message mt-2" />
           </div>
         </div>
       )}
