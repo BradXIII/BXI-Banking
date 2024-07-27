@@ -1,1 +1,2 @@
 * text=auto
+public/icons/crypto.gif filter=lfs diff=lfs merge=lfs -text
